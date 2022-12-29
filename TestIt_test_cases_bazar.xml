@@ -1,0 +1,3084 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<test_cases>
+  <test_case internal_id="2544" name="Регистрация с валидными данными">
+    <external_id>QBC-1764</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле Username ввести любое имя пользователя </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Регистрация выполнена. Открывается страница пользователя с уведомлениями<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="2880" name="Регистрация с незаполненным полем Username">
+    <external_id>QBC-2039</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Поле Username оставить пустым</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поле ввода пустое<br></p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Пользователь остается на странице с формой регистрации. Введенные данные не пропадают. Регистрация не завершена]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2890" name="Регистрация с незаполненным полем Username">
+    <external_id>QBC-2048</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Поле Username оставить пустым</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поле ввода пустое<br></p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Пользователь остается на странице с формой регистрации. Введенные данные не пропадают. Регистрация не завершена]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2882" name="Регистрация с незаполненным полем Password">
+    <external_id>QBC-2041</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+ 
+<app-summernote-editor _ngcontent-myj-c270="" id="step1_1"><div data-cy="summernote-editable"><p>В поле Username ввести любое имя пользователя </p></div></app-summernote-editor><span _ngcontent-mhh-c247="" id="taskNameInput" data-cy="name-editor" contenteditable="true"><br></span>
+
+</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Поле Password оставить пустым<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поле ввода пустое<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Пользователь остается на странице с формой регистрации. Введенные данные не пропадают. Регистрация не завершена]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2883" name="Регистрация с незаполненным полем Repeat password">
+    <external_id>QBC-2042</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+ 
+<app-summernote-editor _ngcontent-myj-c270="" id="step1_1"><div data-cy="summernote-editable"><p>В поле Username ввести любое имя пользователя </p></div></app-summernote-editor><span _ngcontent-mhh-c247="" id="taskNameInput" data-cy="name-editor" contenteditable="true"><br></span>
+
+</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Поле Repeat password оставить пустым<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поле ввода пустое<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Пользователь остается на странице с формой регистрации. Введенные данные не пропадают. Регистрация не завершена]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2885" name="Регистрация с незаполненным полем email">
+    <external_id>QBC-2043</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+ 
+<app-summernote-editor _ngcontent-myj-c270="" id="step1_1"><div data-cy="summernote-editable"><p>В поле Username ввести любое имя пользователя </p></div></app-summernote-editor><span _ngcontent-mhh-c247="" id="taskNameInput" data-cy="name-editor" contenteditable="true"><br></span>
+
+</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>Поле Email оставить пустым<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поле ввода пустое<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Пользователь остается на странице с формой регистрации. Введенные данные не пропадают. Регистрация не завершена]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2900" name="Регистрация с некорректным email">
+    <external_id>QBC-2058</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле Username ввести любое имя пользователя </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести некорректный email.&nbsp; Например без указания домена: userfortest@bk<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Пользователь остается на странице с формой регистрации. Введенные данные не пропадают. Регистрация не завершена]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2887" name="Регистрация с большим количеством символов в поле Username">
+    <external_id>QBC-2045</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+ 
+<app-summernote-editor _ngcontent-myj-c270="" id="step1_1"></app-summernote-editor></p><div data-cy="summernote-editable"><p>В поле Username ввести 300+ символов.</p><p>Например:</p><p>fsdgdgs324532532453245325325hfghfghfgshfdhsfghfgsdhgfgshfdsgtyrtyuiokmnbvcdrtyuikmnbgfr5467890iojknbhgytugfhjbvfgjtrgyuhjbvgfuyghjvbgfdrewrtyuoipkjlbnvcfdrtyuoipopiueyrw432567980oiujlkmnhbvfhdetrw3546734253yhgfdser43536786998iopukljmhnbgnvfgdetr46798iopl;/j,*bnvcdfetryuiopl35254;k,.mnbvbcdgftyuoikl;<br></p></div><span _ngcontent-mhh-c247="" id="taskNameInput" data-cy="name-editor" contenteditable="true"><br></span>
+
+<p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенные символы отображаются в поле ввода</p><p></p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенные данные отображаются в поле ввода</p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Пользователь остается на странице с формой регистрации. Введенные данные не пропадают. Регистрации не завершена<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="2891" name="Регистрация с одним символом в поле Username">
+    <external_id>QBC-2049</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+ 
+<app-summernote-editor _ngcontent-myj-c270="" id="step1_1"></app-summernote-editor></p><div data-cy="summernote-editable"><p>В поле Username ввести один символ.</p><p>Например: n<br></p>
+
+</div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный символ отображается в поле ввода</p><p></p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>Поле Email оставить пустым<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поле ввода пустое<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Регистрация выполнена. Открывается страница пользователя с уведомлениями]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>4</priority>
+  </test_case>
+  <test_case internal_id="2892" name="Регистрация с большим количеством символов в поле Password">
+    <external_id>QBC-2050</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+ 
+<app-summernote-editor _ngcontent-myj-c270="" id="step1_1"></app-summernote-editor></p><div data-cy="summernote-editable"><p>В поле Username ввести имя пользователя<br></p></div><span _ngcontent-mhh-c247="" id="taskNameInput" data-cy="name-editor" contenteditable="true"><br></span>
+
+<p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенные символы отображаются в поле ввода</p><p></p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести пароль, состоящий из 300+ символов.</p><p>Например:</p>fsdgdgs324532532453245325325hfghfghfgshfdhsfghfgsdhgfgshfdsgtyrtyuiokmnbvcdrtyuikmnbgfr5467890iojknbhgytugfhjbvfgjtrgyuhjbvgfuyghjvbgfdrewrtyuoipkjlbnvcfdrtyuoipopiueyrw432567980oiujlkmnhbvfhdetrw3546734253yhgfdser43536786998iopukljmhnbgnvfgdetr46798iopl;/j,*bnvcdfetryuiopl35254;k,.mnbvbcdgftyuoikl;<p></p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенные данные отображаются в поле ввода</p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Регистрация выполнена. Открывается страница пользователя с уведомлениями]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>3</priority>
+  </test_case>
+  <test_case internal_id="2893" name="Регистрация с одним символом в поле Password">
+    <external_id>QBC-2051</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+ 
+<app-summernote-editor _ngcontent-myj-c270="" id="step1_1"></app-summernote-editor></p><div data-cy="summernote-editable"><p>В поле Username ввести имя пользователя<br></p></div><span _ngcontent-mhh-c247="" id="taskNameInput" data-cy="name-editor" contenteditable="true"><br></span>
+
+<p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенные символы отображаются в поле ввода</p><p></p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести пароль, состоящий из одного символа<br></p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенные данные отображаются в поле ввода</p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Регистрация выполнена. Открывается страница пользователя с уведомлениями]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="2894" name="Регистрация с некорректным повторным паролем">
+    <external_id>QBC-2052</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле Username ввести любое имя пользователя </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password ввести пароль, отличающийся от пароля в поле Password<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Регистрация не выполнена. Появляется ошибка "Passwords does not match"<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2895" name="Регистрация ранее зарегистрированного пользователя">
+    <external_id>QBC-2053</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле Username ввести уже существующее в системе имя пользователя <br>Например: userfortest<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторно ввести пароль<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести email, который уже использовался при регистрации.</p><p>Например: userfortesting@bk.ru<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Пользователь остается на странице с формой регистрации. Введенные данные не пропадают. Регистрация не завершена</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2897" name="Регистрация с введением нескольких слов в поле Username">
+    <external_id>QBC-2055</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле Username ввести несколько слов через пробел. Например: "Мария Анна Петрова"<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести любой пароль </p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторить пароль<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Регистрация выполнена. Открывается страница пользователя с уведомлениями</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="2899" name="Регистрация с введением нескольких слов в поле Password">
+    <external_id>QBC-2057</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта  <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a></p><p>Пользователь ранее не был зарегистрирован в системе<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле Username ввести любое имя<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле Password ввести пароль состоящий из нескольких слов через пробелы. Например: "машина небо код"<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>В поле Repeat password повторить пароль<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>В поле Email ввести валидный email<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный email отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>5</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Sign up</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Пользователь остается на странице с формой регистрации. Введенные данные не пропадают. Регистрация не завершена</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="3368" name="Post/signup регистрация с валидными данными">
+    <external_id>QBC-2448</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Тестирование в Postman.<br>Пользователь ранее не был зарегистрирован<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, 'Courier New', monospace', Consolas, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><p>Отправить запрос POST&nbsp;</p><p><a href="http://bazar.jettycloud.com:8080/signup" target="_blank">http://bazar.jettycloud.com:8080/signup</a></p><div dir="auto">с телом:</div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"username"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"usertest"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"password"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"1234"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"email"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"user@bk.ru"</span></div><div><span style="color: #000000;">}</span></div></div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p> 
+<app-summernote-editor _ngcontent-exc-c270="" id="step1_2"></app-summernote-editor></p><div data-cy="summernote-editable">Status 200 OK&nbsp;<p>Response body:<br></p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, 'Courier New', monospace', Consolas, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #a31515;">"token"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">" </span><span><span data-testid="comment-base-item-10067">&lt;unique_encrypted_token&gt;</span></span><span style="color: #0451a5;">  "</span></div><div><span style="color: #000000;">}</span></div></div></div>
+
+<br><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="3369" name="Post/signup регистрация с незаполненным Username">
+    <external_id>QBC-2449</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[Тестирование в Postman.<br>Пользователь ранее не был зарегистрирован]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+
+</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, 'Courier New', monospace', Consolas, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><p>Отправить запрос POST&nbsp;</p><p><a href="http://bazar.jettycloud.com:8080/signup" target="_blank">http://bazar.jettycloud.com:8080/signup</a></p><div dir="auto">с телом:</div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"username"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">" "</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"password"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"1234"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"email"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"user22@bk.ru"</span></div><div><span style="color: #000000;">}</span></div></div><p>
+
+<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p> 
+
+</p><div><span><span>500</span><span>Internal Server Error</span></span></div><p><br>
+
+<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3373" name="Post/signup регистрация с незаполненным Password">
+    <external_id>QBC-2452</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[Тестирование в Postman.<br>Пользователь ранее не был зарегистрирован]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+
+</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, 'Courier New', monospace', Consolas, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><p>Отправить запрос POST&nbsp;</p><p><a href="http://bazar.jettycloud.com:8080/signup" target="_blank">http://bazar.jettycloud.com:8080/signup</a></p><div dir="auto">с телом:</div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"username"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"usertest "</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"password"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">" "</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"email"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"user22@bk.ru"</span></div><div><span style="color: #000000;">}</span></div></div><p>
+
+<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p> 
+
+</p><div><span><span>500</span><span>Internal Server Error</span></span></div><p><br>
+
+<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3394" name="Post/signup регистрация с незаполненным Email">
+    <external_id>QBC-2470</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[Тестирование в Postman.<br>Пользователь ранее не был зарегистрирован]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+
+</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, 'Courier New', monospace', Consolas, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><p>Отправить запрос POST&nbsp;</p><p><a href="http://bazar.jettycloud.com:8080/signup" target="_blank">http://bazar.jettycloud.com:8080/signup</a></p><div dir="auto">с телом:</div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"username"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"usertest "</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"password"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"1232"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"email"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">" "</span></div><div><span style="color: #000000;">}</span></div></div><p>
+
+<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p> 
+
+</p><div><span><span>500</span><span>Internal Server Error</span></span></div><p><br>
+
+<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3374" name="Post/signup регистрация с некорректным Email">
+    <external_id>QBC-2453</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[Тестирование в Postman.<br>Пользователь ранее не был зарегистрирован]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p> 
+
+</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, 'Courier New', monospace', Consolas, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><p>Отправить запрос POST&nbsp;</p><p><a href="http://bazar.jettycloud.com:8080/signup" target="_blank">http://bazar.jettycloud.com:8080/signup</a></p><div dir="auto">с телом:</div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"username"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"usertest "</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"password"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"1232"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">&nbsp;&nbsp;</span><span style="color: #a31515;">"email"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">"userfortest@bk"</span></div><div><span style="color: #000000;">}</span></div></div><p>
+
+<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p> 
+
+</p><div><span><span>500</span><span>Internal Server Error</span></span></div><p><br>
+
+<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2532" name="Авторизация с валидными данными">
+    <external_id>QBC-1753</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>На сайте <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> создан пользователь, логин: userfortest, пароль: 1234</p><p>Открыть главную страницу сайта<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле для ввода имени ввести имя зарегистрированного пользователя<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле для ввода пароля ввести корректный пароль <br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Log In</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Вход выполнен. Открывается страница с уведомлениями<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="2888" name="Авторизация с пустым полем Username">
+    <external_id>QBC-2046</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>На сайте <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> создан пользователь, логин: userfortest, пароль: 1234</p><p>Открыть главную страницу сайта<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[Поле Username оставить пустым<br>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поле ввода пустое<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле для ввода пароля ввести корректный пароль <br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Log In</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Происходит обновление страницы. Форма авторизации очищается, вход не выполнен]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2889" name="Авторизация с пустым полем Password">
+    <external_id>QBC-2047</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>На сайте <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> создан пользователь, логин: userfortest, пароль: 1234</p><p>Открыть главную страницу сайта<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[В поле для ввода имени ввести имя зарегистрированного пользователя]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Поле для ввода пароля оставить пустым<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поле ввода пустое<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Log In</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Происходит обновление страницы. Форма авторизации очищается, вход не выполнен]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2534" name="Авторизация с невалидным паролем">
+    <external_id>QBC-1755</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>На сайте <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> создан пользователь, логин: userfortest, пароль: 1234</p>Открыть главную страницу сайта]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле для ввода имени ввести имя зарегистрированного пользователя</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле для ввода пароля ввести некорректный пароль <br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Log In</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Происходит обновление страницы. Форма авторизации очищается, вход не выполнен]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="2536" name="Авторизация с невалидным именем пользователя">
+    <external_id>QBC-1757</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>На сайте <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> создан пользователь, логин: userfortest, пароль: 1234</p>Открыть главную страницу сайта]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле для ввода имени ввести некорректное имя&nbsp; пользователя</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенное имя отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле для ввода пароля ввести корректный пароль <br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенный пароль отображается в виде точек<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Log In</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Происходит обновление страницы. Форма авторизации очищается, вход не выполнен]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2362" name="Авторизация незарегистрированного пользователя">
+    <external_id>QBC-1626</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Открыть главную страницу сайта <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> <br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>В поле для ввода имени ввести рандомные символы<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенные символы отображается в поле ввода</p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>В поле для ввода пароля ввести рандомные символы<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Введенные символы&nbsp; отображаются в виде точек<br></p><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Log In</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Происходит обновление страницы. Форма авторизации очищается, вход не выполнен<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3387" name="Post/authenticate авторизация c валидными данными">
+    <external_id>QBC-2463</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>На сайте <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> создан пользователь, логин: userfortest, пароль: 1234</p>Тестирование через Postman<br><p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Отправить <span style="background-color: transparent;">запрос&nbsp; Post</span><span style="background-color: transparent;"> </span><a href="http://bazar.jettycloud.com:8080/authenticate" target="_blank" style="font-family: Roboto; font-weight: normal;">http://bazar.jettycloud.com:8080/authenticate</a><span style="background-color: transparent;">&nbsp;</span></p><p><span style="background-color: transparent;">с&nbsp;</span><span style="background-color: transparent;">&nbsp;Request body:</span></p><p>&nbsp;<span style="background-color: transparent;">{</span></p><p>&nbsp; "username": "userfortest",</p><p>&nbsp; "password": "1234"</p><p>}</p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Status  
+
+<span>200</span><span>OK</span>
+
+</p><p>Response body:<br></p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, 'Courier New', monospace', Consolas, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #a31515;">"token"</span><span style="color: #000000;">:&nbsp;</span><span style="color: #0451a5;">" </span><span><span data-testid="comment-base-item-10067">&lt;unique_encrypted_token&gt;</span></span><span style="color: #0451a5;"> "</span></div><div><span style="color: #000000;">}</span></div></div><p></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="3389" name="Post/authenticate авторизация c незаполненным Username">
+    <external_id>QBC-2465</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>На сайте <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> создан пользователь, логин: userfortest, пароль: 1234</p>Тестирование через Postman<br><p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Отправить <span style="background-color: transparent;">запрос&nbsp; Post</span><span style="background-color: transparent;"> </span><a href="http://bazar.jettycloud.com:8080/authenticate" target="_blank" style="font-family: Roboto; font-weight: normal;">http://bazar.jettycloud.com:8080/authenticate</a><span style="background-color: transparent;">&nbsp;</span></p><p><span style="background-color: transparent;">с&nbsp;</span><span style="background-color: transparent;">&nbsp;Request body:</span></p><p>&nbsp;<span style="background-color: transparent;">{</span></p><p>&nbsp; "username": " ",</p><p>&nbsp; "password": "1234"</p><p>}</p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Status code:</p><div><span><span>403 </span><span>Forbidden</span></span></div><p><br>
+
+<span></span></p><p><br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3391" name="Post/authenticate авторизация c незаполненным Password">
+    <external_id>QBC-2467</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>На сайте <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> создан пользователь, логин: userfortest, пароль: 1234</p>Тестирование через Postman<br><p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Отправить <span style="background-color: transparent;">запрос&nbsp; Post</span><span style="background-color: transparent;"> </span><a href="http://bazar.jettycloud.com:8080/authenticate" target="_blank" style="font-family: Roboto; font-weight: normal;">http://bazar.jettycloud.com:8080/authenticate</a><span style="background-color: transparent;">&nbsp;</span></p><p><span style="background-color: transparent;">с&nbsp;</span><span style="background-color: transparent;">&nbsp;Request body:</span></p><p>&nbsp;<span style="background-color: transparent;">{</span></p><p>&nbsp; "username": "userfortest",</p><p>&nbsp; "password": " "</p><p>}</p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Status code:</p><div><span><span>403 </span><span>Forbidden</span></span></div><br><br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3392" name="Post/authenticate авторизация c некорректным паролем">
+    <external_id>QBC-2468</external_id>
+    <summary>
+      <![CDATA[]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>На сайте <a href="http://bazar.jettycloud.com" target="_blank">bazar.jettycloud.com</a> создан пользователь, логин: userfortest, пароль: 1234</p>Тестирование через Postman<br><p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Отправить <span style="background-color: transparent;">запрос&nbsp; Post</span><span style="background-color: transparent;"> </span><a href="http://bazar.jettycloud.com:8080/authenticate" target="_blank" style="font-family: Roboto; font-weight: normal;">http://bazar.jettycloud.com:8080/authenticate</a><span style="background-color: transparent;">&nbsp;</span></p><p><span style="background-color: transparent;">с&nbsp;</span><span style="background-color: transparent;">&nbsp;Request body:</span></p><p>&nbsp;<span style="background-color: transparent;">{</span></p><p>&nbsp; "username": "userfortest",</p><p>&nbsp; "password": "123"</p><p>}</p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Status code:</p><div><span><span>403 </span><span>Forbidden</span></span></div><p><br>
+
+<span></span></p><p><br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2717" name="Создание лота с неавторизованного пользователя">
+    <external_id>QBC-1902</external_id>
+    <summary>
+      <![CDATA[<p>Попытка создать лот без авторизации, через прямую ссылку на страницу создания лота.<br></p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Проверить что авторизация на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> отсутствует. </p><p>Нажать на кнопку logout в правом верхнем углу экрана, если авторизованы.<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу http://bazar.jettycloud.com/lots-add</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Произошла переадресация на страницу логина <a href="http://bazar.jettycloud.com/login," target="_blank">http://bazar.jettycloud.com/login</a> <br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Безопасности</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="2728" name="Создание лота с авторизованного пользователя">
+    <external_id>QBC-1913</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Заполнить поле Name<br>Заполнить поле Price числовым значением<br>Заполнить поле Description<br>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Произошло перенаправление на страницу лота<br>Имя, цена и описание совпадают с введенными при создании лота значениями</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Отобразилась запись в таблице, содержащая всю введенную информацию о лоте (Имя, Цену, Описание)<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Позитивный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="2755" name="Создание лота с буквами в цене с авторизованного пользователя">
+    <external_id>QBC-1935</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с буквенными символами в цене, с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Заполнить поле Name<br>Заполнить поле Price буквенными символами на любом языке<br>Заполнить поле Description<br>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Над кнопкой Save отобразилась красная надпись Something went wrong</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Поиск не нашел совпадений]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3030" name="Создание лота без имени с авторизованного пользователя">
+    <external_id>QBC-2163</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота без имени, с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Не заполнять поле Name<br>Заполнить поле Price числовым значением<br>Заполнить поле Description<br>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Над кнопкой Save отобразилась красная надпись Something went wrong</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Поиск не нашел совпадений]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2963" name="Создание лота с символами в цене с авторизованного пользователя">
+    <external_id>QBC-2108</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с буквенными символами в цене, с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Заполнить поле Name<br>Заполнить поле Price несколькими символами (+-=.,)<br>Заполнить поле Description<br>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Над кнопкой Save отобразилась красная надпись Something went wrong</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Поиск не нашел совпадений]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="2784" name="Создание лота с файлом, который не является изображением, с авторизованного пользователя">
+    <external_id>QBC-1953</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с файлом, который не является изображением, с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Подготовить любой файл, который не является изображением</p><hr><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Заполнить поле Name<br>Заполнить поле Price числовым значением<br>Заполнить поле Description</p><p>Нажать на кнопку Browse и прикрепить подготовленный файл<br>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Над кнопкой Save отобразилась красная надпись Something went wrong</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Поиск не нашел совпадений]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="2789" name="Создание лота с несколькими файлами изображений, с авторизованного пользователя">
+    <external_id>QBC-1957</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с несколькими файлами изображений, с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Подготовить 2 любых файла изображений<br></p><hr><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Заполнить поле Name<br>Заполнить поле Price числовым значением<br>Заполнить поле Description</p><p>Нажать на кнопку Browse и прикрепить 2 подготовленных файла<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>В поле для прикрепления файлов отображаются имена и расширения обоих прикрепленных файлов<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Произошло перенаправление на страницу лота<br>Имя, цена и описание совпадают с введенными при создании лота значениями.<br>Под описанием отображаются изображения которые были прикреплены</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Отобразилась запись в таблице, содержащая всю введенную информацию о лоте (Имя, Цену, Описание)]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>Скопировать цифровой id лота из предыдущей выдачи<br></p>В левой части экрана в списке таблиц выбрать main -&gt; lot_photo<br>В поле "Фильтровать строки" ввести id лота<p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Отобразилась запись в таблице, содержащая информацию об изображениях лота (id, file_id, lot_id) Количество строк совпадает с количеством загруженных изображений<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Позитивный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="2791" name="Создание лота с одним файлом изображения, с авторизованного пользователя">
+    <external_id>QBC-1959</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с единственным файлом изображением, с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Подготовить один любой файл изображение<br></p><hr><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Заполнить поле Name<br>Заполнить поле Price числовым значением<br>Заполнить поле Description</p><p>Нажать на кнопку Browse и прикрепить подготовленный файл<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>В поле для прикрепления файлов отображается имя и расширение прикрепленного файла<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Произошло перенаправление на страницу лота<br>Имя, цена и описание совпадают с введенными при создании лота значениями.<br>Под описанием отображается изображение которое было прикреплено<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Отобразилась запись в таблице, содержащая всю введенную информацию о лоте (Имя, Цену, Описание)]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>4</order>
+        <name>
+          <![CDATA[<p>Скопировать цифровой id лота из предыдущей выдачи<br></p><p>В левой части экрана в списке таблиц выбрать main -&gt; lot_photo<br>В поле "Фильтровать строки" ввести id лота<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Отобразилась запись в таблице, содержащая информацию об изображении лота (id, file_id, lot_id)</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Позитивный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="2779" name="Создание лота с большой ценой с авторизованного пользователя">
+    <external_id>QBC-1948</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с ценой &gt; 17 знаков, с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Заполнить поле Name<br>Заполнить поле Price числовым значением &gt; 17 знаков<br>Заполнить поле Description<br>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Над кнопкой Save отобразилась красная надпись Something went wrong</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Поиск не нашел совпадений]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>4</priority>
+  </test_case>
+  <test_case internal_id="2773" name="Создание лота с длинным именем с авторизованного пользователя">
+    <external_id>QBC-1943</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с именем более 100 знаков, с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Заполнить поле Name более чем 100 знаками<br>Заполнить поле Price <br>Заполнить поле Description<br>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Над кнопкой Save отобразилась красная надпись Something went wrong</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Поиск не нашел совпадений]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>3</priority>
+  </test_case>
+  <test_case internal_id="2778" name="Создание лота с длинным описанием с авторизованного пользователя">
+    <external_id>QBC-1947</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота описанием более 255 знаков, с учетной записи авторизованного пользователя на сайте http://bazar.jettycloud.com/</p><hr>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Создать учетную запись по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a> </p><hr><p></p><p>Авторизоваться на сайте по ссылке http://bazar.jettycloud.com/login</p><hr>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a> <br>Заполнить поле Name <br>Заполнить поле Price <br>Заполнить поле Description более чем 255 знаками<br>Нажать на кнопку Save</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Над кнопкой Save отобразилась красная надпись Something went wrong</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота<br><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Поиск не нашел совпадений]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>функциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>3</priority>
+  </test_case>
+  <test_case internal_id="3367" name="Уведомление о подаче заявки на лот текущего пользователя">
+    <external_id>QBC-2447</external_id>
+    <summary>
+      <![CDATA[Проверка работы уведомления о подаче заявки на лот текущего пользователя<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Создать ДВЕ учетные записи по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a><a href="http://bazar.jettycloud.com/signup" target="_blank"><br></a> </p><hr><p></p><p>Авторизоваться в первую учетную запись по ссылке <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a></p><hr><p>Создать новый лот с помощью формы по ссылке&nbsp; <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a><a href="http://bazar.jettycloud.com/lots-add" target="_blank"> </a></p><p>Сохранить ссылку из адресной строки<br></p><p>Нажать на кнопку Logout в правом верхнем углу экрана<br></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Авторизоваться во вторую учетную запись по ссылке <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a><a href="http://bazar.jettycloud.com/login" target="_blank"><br></a></p><p>Перейти по сохраненной в preconditions ссылке, откроется страница созданного нами товара<br>Нажать на кнопку Make an offer<br>Появится сообщение - Your offer status is <b>NEW</b></p><p>Нажать на кнопку logout и снова зайти в Первую учетную запись&nbsp; через форму <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a><a href="http://bazar.jettycloud.com/login" target="_blank"><br></a></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[На сайте активна вкладка Notifications<br>Появилось новое сообщение - There is a new offer for your lot #lot_id<br>При нажатии на сообщение происходит переход на страницу этого лота<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Позитивный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="3388" name="Уведомление об изменении статуса заявки, на лот текущего пользователя, принята">
+    <external_id>QBC-2464</external_id>
+    <summary>
+      <![CDATA[<p>Проверка работы уведомления<span _ngcontent-qet-c247="" id="taskNameInput" data-cy="name-editor" contenteditable="true"> об изменении статуса заявки на "принята", на лот текущего пользователя</span><br></p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Создать ДВЕ учетные записи по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a><a href="http://bazar.jettycloud.com/signup" target="_blank"><br></a> </p><hr><p></p><p>Авторизоваться в первую учетную запись по ссылке <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a></p><hr><p>Создать новый лот с помощью формы по ссылке&nbsp; <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a><a href="http://bazar.jettycloud.com/lots-add" target="_blank"> </a></p><p>Сохранить ссылку из адресной строки<br></p><p>Нажать на кнопку Logout в правом верхнем углу экрана</p><hr><p>Авторизоваться во вторую учетную запись по ссылке <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a><a href="http://bazar.jettycloud.com/login" target="_blank"><br></a></p><p>Перейти по сохраненной ссылке, откроется страница созданного нами товара<br>Нажать на кнопку Make an offer<br>Появится сообщение - Your offer status is <b>NEW</b></p><p>Нажать на кнопку logout и снова зайти в Первую учетную запись&nbsp; через форму <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a></p><p>На сайте активна вкладка Notifications<br>Появилось новое сообщение - There is a new offer for your lot #lot_id<a href="http://bazar.jettycloud.com/login" target="_blank"><br></a></p><p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Нажать на сообщение There is a new offer for your lot #lot_id<br>При нажатии на сообщение происходит переход на страницу этого лота<br>На странице лота нажать на кнопку в правом углу экрана - Accept<br>кнопка поменяла название на Accepted<br>Нажать на кнопку logout и снова зайти во Вторую учетную запись&nbsp; через форму <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a><br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>На сайте активна вкладка Notifications<br>Появилось новое сообщение - Your offer for lot #lot_id was <b>accepted</b><br>При нажатии на сообщение происходит переход на страницу этого лота<br>Под лотом есть сообщение Your offer status is <b>ACCEPTED</b></p><p>Рядом с названием есть пометка SOLD<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Позитивный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="3020" name="Создание лота с неавторизованного пользователя через POST запрос api">
+    <external_id>QBC-2155</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с учетной записи неавторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через POST запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span><p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"имя_товара"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: число с ценой</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара"</span></div><div><span style="color: #000000;">}</span></div></div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Сервер вернет 403 status<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поиск не нашел совпадений</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="3025" name="Создание лота без имени, с авторизованного пользователя, через POST запрос api">
+    <external_id>QBC-2160</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота без имени с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через POST запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre></span></span>В ответ сервер отдаст json с токеном, его нужно сохранить<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">""</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: число с ценой</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара"</span></div><div><span style="color: #000000;">}</span></div><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div></div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Сервер вернет 400 status code<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поиск не нашел совпадений</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3042" name="Создание лота, с авторизованного пользователя, без изображения, через POST запрос api">
+    <external_id>QBC-2174</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота без изображения, с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через POST запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre></span></span>В ответ сервер отдаст json с токеном, его нужно сохранить<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"</span><span style="color: #0451a5;"></span><span style="color: #0451a5;">имя_товара</span><span style="color: #0451a5;"></span><span style="color: #0451a5;">"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: число с ценой</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара"</span></div><div><span style="color: #000000;">}</span></div><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div></div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Сервер вернет id лота в формате json<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Отобразилась запись в таблице, содержащая всю введенную информацию о лоте (Имя, Цену, Описание)</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Позитивный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="3346" name="Создание лота, с авторизованного пользователя, с прикрепленным изображением, через POST запрос api">
+    <external_id>QBC-2428</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с прикрепленным изображением, с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через POST запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p><p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span></span></span></p><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre>В ответ сервер отдаст json с токеном, его нужно сохранить</p><hr><p>Подготовить изображение<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span><p></p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/file<br>В теле запроса должен быть прикреплен файл изображения, в формате form-data<br></p><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Сервер вернет id изображения в формате json<br>Сохраните его</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"</span><span style="color: #0451a5;"></span><span style="color: #0451a5;">имя_товара</span><span style="color: #0451a5;"></span><span style="color: #0451a5;">"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: число с ценой</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара",</span><span style="color: #000000;"><br></span></div><div><span style="color: #000000;"></span><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">    </span><span style="color: #a31515;">"files"</span><span style="color: #000000;">:[id_изображения</span><span style="color: #000000;">]</span></div></div></div><div><span style="color: #0451a5;"><br></span></div><div><span style="color: #000000;">}</span></div></div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Сервер вернет id лота в формате json<br>Сохраните его<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot_photo<br>В поле "Фильтровать строки" ввести id изображения<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Отобразилась запись в таблице, содержащая всю введенную информацию об изображении (id, id изображения, id лота )</p><p>id изображения и id лота совпадают с теми что нам вернули запросы<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Позитивный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="3354" name="Загрузка на сервер файла, не являющегося изображением, через POST запрос api">
+    <external_id>QBC-2435</external_id>
+    <summary>
+      <![CDATA[<p>Загрузка на сервер файла, не являющимся изображением, с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через POST запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span></span></span></p><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre>В ответ сервер отдаст json с токеном, его нужно сохранить<p></p><hr><p>Подготовить файл не являющийся изображением<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p><p></p><p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/file<br>В теле запроса должен быть прикреплен файл, в формате form-data<br></p><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Сервер вернет 400 status code</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="3353" name="Создание лота, с авторизованного пользователя, с прикрепленными несколькими изображениями, через POST запрос api">
+    <external_id>QBC-2434</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с несколькими прикрепленными изображениями, с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через POST запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p></p><p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span></span></span></p><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre>В ответ сервер отдаст json с токеном, его нужно сохранить<p></p><hr><p>Подготовить изображения<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p><p></p><p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/file<br>В теле запроса должен быть прикреплен файл изображения, в формате form-data<br></p><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Сервер вернет id изображения в формате json<br>Сохраните его</p><p>Затем, повторите этот шаг для второго изображения<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"</span><span style="color: #0451a5;"></span><span style="color: #0451a5;">имя_товара</span><span style="color: #0451a5;"></span><span style="color: #0451a5;">"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: число с ценой</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара",</span><span style="color: #000000;"><br></span></div><div><span style="color: #000000;"></span><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">    </span><span style="color: #a31515;">"files"</span><span style="color: #000000;">:[id_изображения1, id_изображения2</span><span style="color: #000000;">]</span></div></div></div><div><span style="color: #0451a5;"><br></span></div><div><span style="color: #000000;">}</span></div></div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Сервер вернет id лота в формате json<br>Сохраните его<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot_photo<br>В поле "Фильтровать строки" ввести id лота<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Отобразилось 2 записи в таблице, они содержат всю введенную информацию об изображениях (id, id изображения, id лота )</p><p>id изображений и id лота совпадают с теми что нам вернули запросы<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Позитивный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="3033" name="Создание лота с буквами в цене, с авторизованного пользователя, через POST запрос api">
+    <external_id>QBC-2165</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота c буквами в цене, с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через GET запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre></span></span>В ответ сервер отдаст json с токеном, его нужно сохранить<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"</span><span style="color: #0451a5;">имя_товара</span><span style="color: #0451a5;">"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: буквенные символы на любом языке</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара"</span></div><div><span style="color: #000000;">}</span></div><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div></div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Сервер вернет 400 status code<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поиск не нашел совпадений</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3035" name="Создание лота с символами в цене, с авторизованного пользователя, через POST запрос api">
+    <external_id>QBC-2167</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота c символами в цене, с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через GET запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre></span></span>В ответ сервер отдаст json с токеном, его нужно сохранить<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"</span><span style="color: #0451a5;">имя_товара</span><span style="color: #0451a5;">"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: </span>несколько символов (+-=.,)<span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара"</span></div><div><span style="color: #000000;">}</span></div><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div></div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Сервер вернет 400 status code<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поиск не нашел совпадений</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3036" name="Создание лота с большой ценой, с авторизованного пользователя, через POST запрос api">
+    <external_id>QBC-2168</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с ценой &gt; 17 знаков, с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через GET запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre></span></span>В ответ сервер отдаст json с токеном, его нужно сохранить<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"</span><span style="color: #0451a5;">имя_товара</span><span style="color: #0451a5;">"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: </span>числовое значение &gt; 17 знаков<span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара"</span></div><div><span style="color: #000000;">}</span></div><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div></div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Сервер вернет 400 status code<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поиск не нашел совпадений</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>4</priority>
+  </test_case>
+  <test_case internal_id="3038" name="Создание лота с длинным именем , с авторизованного пользователя, через POST запрос api">
+    <external_id>QBC-2170</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с именем более 100 знаков, с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через GET запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre></span></span>В ответ сервер отдаст json с токеном, его нужно сохранить<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"</span><span style="color: #0451a5;">имя_товара</span><span style="color: #0451a5;"> более 100 знаков"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: </span>числовое значение<span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара"</span></div><div><span style="color: #000000;">}</span></div><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div></div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Сервер вернет 400 status code<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поиск не нашел совпадений</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>3</priority>
+  </test_case>
+  <test_case internal_id="3040" name="Создание лота с длинным описанием , с авторизованного пользователя, через POST запрос api">
+    <external_id>QBC-2172</external_id>
+    <summary>
+      <![CDATA[<p>Создание лота с описанием более 255 знаков, с учетной записи авторизованного пользователя на сайте <a href="http://bazar.jettycloud.com/" target="_blank">http://bazar.jettycloud.com/</a> <br></p>через GET запрос к API в Postman<br>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Подготовить учетную запись которая есть в базе данных</p><p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для входа, в формате json :  <span><span><pre><code><span>{
+</span><span>  </span><span>"username"</span><span>: </span><span>"your_username"</span><span>,
+</span><span>  </span><span>"password"</span><span>: </span><span>"your_password"</span><span>
+</span>}</code></pre></span></span>В ответ сервер отдаст json с токеном, его нужно сохранить<span style="color: rgb(33, 33, 33); font-family: Inter, system-ui, -apple-system, &quot;system-ui&quot;, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"><br></span></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Через postman отправить post запрос по адресу http://bazar.jettycloud.com:8080/authenticate<br>В теле запроса должны быть данные для лота, в формате json:</p><div style="color: #000000;background-color: #fffffe;font-family: 'IBMPlexMono, Monaco, 'Courier New', monospace', Menlo, Monaco, 'Courier New', monospace;font-weight: normal;font-size: 12px;line-height: 18px;white-space: pre;"><div><span style="color: #000000;">{</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"name"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"</span><span style="color: #0451a5;">имя_товара</span><span style="color: #0451a5;">"</span><span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"price"</span><span style="color: #000000;">: </span>числовое значение<span style="color: #000000;">,</span></div><div><span style="color: #000000;">    </span><span style="color: #a31515;">"description"</span><span style="color: #000000;">: </span><span style="color: #0451a5;">"Описание товара более 255 знаков"</span></div><div><span style="color: #000000;">}</span></div><div>Во вкладке авторизация нужно выбрать Bearer token  и <br>вставить в поле сохраненный ранее токен<span style="color: #000000;"><br></span></div></div><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Сервер вернет 400 status code<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Перейти на страницу Базы Данных <a href="http://bazar.jettycloud.com:9091/" target="_blank">http://bazar.jettycloud.com:9091/</a><br>Авторизоваться (логин app / пароль Test.123! )<br>В левой части экрана в списке таблиц выбрать main -&gt; lot<br>В поле "Фильтровать строки" ввести имя лота</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Поиск не нашел совпадений</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Негативный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>3</priority>
+  </test_case>
+  <test_case internal_id="3398" name="Продажа лота между двумя авторизованными пользователями">
+    <external_id>QBC-2473</external_id>
+    <summary>
+      <![CDATA[<p>Проверка работы функциональности<span _ngcontent-qet-c247="" id="taskNameInput" data-cy="name-editor" contenteditable="true"> продажи лота между двумя авторизованными пользователями</span><br></p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>Создать ДВЕ учетные записи по ссылке <a href="http://bazar.jettycloud.com/signup" target="_blank">http://bazar.jettycloud.com/signup</a><a href="http://bazar.jettycloud.com/signup" target="_blank"><br></a> </p><hr><p></p><p>Авторизоваться в первую учетную запись по ссылке <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a></p><hr><p>Создать новый лот с помощью формы по ссылке&nbsp; <a href="http://bazar.jettycloud.com/lots-add" target="_blank">http://bazar.jettycloud.com/lots-add</a><a href="http://bazar.jettycloud.com/lots-add" target="_blank"> </a></p><p>Сохранить ссылку из адресной строки<br></p><p>Нажать на кнопку Logout в правом верхнем углу экрана</p><hr><p></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Авторизоваться во вторую учетную запись по ссылке <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a><a href="http://bazar.jettycloud.com/login" target="_blank"><br></a></p><p>Перейти по сохраненной ссылке, откроется страница созданного нами товара<br>Нажать на кнопку Make an offer<br></p><br><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Появится сообщение - Your offer status is <b>NEW</b></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку logout и снова зайти в Первую учетную запись&nbsp; через форму <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a></p><p>На сайте активна вкладка Notifications<br>Появилось новое сообщение - There is a new offer for your lot #lot_id</p><p>Нажать на сообщение There is a new offer for your lot #lot_id<br>При нажатии на сообщение происходит переход на страницу этого лота<br>На странице лота нажать на кнопку в правом углу экрана - Accept</p><p></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Кнопка поменяла название на Accepted<br>Рядом с названием лота появилась пометка SOLD<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку logout и снова зайти во Вторую учетную запись&nbsp; через форму <a href="http://bazar.jettycloud.com/login" target="_blank">http://bazar.jettycloud.com/login</a><a href="http://bazar.jettycloud.com/login" target="_blank"></a></p><p>На сайте активна вкладка Notifications<br>Появилось новое сообщение - Your offer for lot #lot_id was <b>accepted</b><br>При нажатии на сообщение происходит переход на страницу этого лота<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Под лотом есть сообщение Your offer status is <b>ACCEPTED</b></p><p>Рядом с названием есть пометка SOLD<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields>
+      <custom_field label="Вид тестирования" system_name="Вид тестирования">
+        <custom_values>
+          <custom_value>Фунциональное</custom_value>
+        </custom_values>
+      </custom_field>
+      <custom_field label="Позитивность" system_name="Позитивность">
+        <custom_values>
+          <custom_value>Позитивный</custom_value>
+        </custom_values>
+      </custom_field>
+    </custom_fields>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="3344" name="Принятие запроса на покупку на сайте bazar.jettycloud.com">
+    <external_id>QBC-2426</external_id>
+    <summary>
+      <![CDATA[Проверка функциональности принятия заявки на покупку лота]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь</p><p>2. Созданный этим пользователем лот</p><p>3. Поданная со стороны другого пользователя заявка на покупку лота</p><p>4. Перейти на страницу лота на сайте&nbsp;<span style="background-color: transparent; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span><a href="http://bazar.jettycloud.com" style="font-family: Roboto; font-weight: 400; text-decoration: none;"><span style="font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com</span></a></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>На странице лота найти информацию о всех поданных заявках на покупку</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>На странице лота отображаются данные пользователей, подавших заявку, и кнопка "Accept"</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Нажать на кнопку принятия заявки на покупку</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Статус принятой заявки поменялся на "Accepted"</p><p>Статус остальных заявок поменялся на "Rejected"</p><p>Статус лота поменялся на "Sold"</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="3345" name="Оформление запроса на покупку лота сайте bazar.jettycloud.com">
+    <external_id>QBC-2427</external_id>
+    <summary>
+      <![CDATA[<p>Проверка функциональности подачи заявки на покупку лота</p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь&nbsp;</p><p>2. Лот, созданный другим зарегистрированным пользователем</p><p>3. Зайти на страницу лота (см. п.2) на сайте&nbsp;<span style="background-color: transparent; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span><a href="http://bazar.jettycloud.com" style="font-family: Roboto; font-weight: 400; text-decoration: none;"><span style="font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com</span></a>&nbsp;</p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Найти кнопку запроса на покупку</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Под информационным блоком лота должна быть кнопка "Make an offer"</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Нажать кнопку запроса на покупку</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Вывод сообщения о принятии запроса на покупку</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="3478" name="Отклоненный запрос на покупку на сайте http://bazar.jettycloud.com">
+    <external_id>QBC-2545</external_id>
+    <summary>
+      <![CDATA[Проверка функциональности отображения статуса лота при отклоненном запросе на покупку]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь</p><p>2. Лот, созданный другим пользователем</p><p>3. Оформленная и отклоненная заявка на покупку этого лота</p><p>4. Перейти на страницу этого лота на сайте&nbsp;<span style="background-color: transparent; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span><a href="http://bazar.jettycloud.com" style="font-family: Roboto; font-weight: 400; text-decoration: none;"><span style="font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com</span></a><span style="background-color: transparent;">&nbsp;</span></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[Найти на странице лота статус запроса о покупке]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>На странице&nbsp;<span style="background-color: transparent;">лота отображается статус "Rejected"</span></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Найти отображение статуса лота</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Статус лота изменился на "Sold"</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="3479" name="Принятый запрос на покупку лота на сайте bazar.jettycloud.com">
+    <external_id>QBC-2546</external_id>
+    <summary>
+      <![CDATA[Проверка отображения принятого запроса на покупку]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь</p><p>2. Лот, созданный другим пользователем</p><p>3. Оформленная и принятая заявка на покупку этого лота</p><p>4. Перейти на страницу этого лота на сайте&nbsp;<span style="color: rgb(0, 0, 0); background-color: transparent; font-size: 11pt; font-family: Arial; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span><a href="http://bazar.jettycloud.com/" style="text-decoration: none; font-family: Roboto; font-weight: 400;"><span style="color: rgb(17, 85, 204); font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com</span></a><span style="background-color: transparent;">&nbsp;</span></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>Найти на странице лота статус запроса о покупке<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>На странице&nbsp;<span style="background-color: transparent;">лота отображается статус "Accepted"</span><br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Найти отображение статуса лота<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>Статус лота изменился на "Sold"<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3481" name="Отображение непроданного лота в общем списке bazar.jettycloud.com">
+    <external_id>QBC-2547</external_id>
+    <summary>
+      <![CDATA[<p>Проверка отображения лота в общем списке</p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь</p><p>2. Созданный этим пользователем лот</p><p>3. Перейти на страницу лотов&nbsp;<a href="http://bazar.jettycloud.com/lots" style="font-family: Roboto; font-weight: 400; text-decoration: none;"><span style="font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com/lots</span></a></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>На общей странице лотов найти созданный непроданный лот&nbsp;&nbsp;</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Созданный лот отображается с указанными при создании ценой, названием. Также отображается логин пользователя, который его создал]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>1</priority>
+  </test_case>
+  <test_case internal_id="3485" name="Отображение проданного лота в приватном списке bazar.jettycloud.com">
+    <external_id>QBC-2551</external_id>
+    <summary>
+      <![CDATA[<p>Проверка отображения лота в приватном списке</p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь</p><p>2. Созданный этим пользователем проданный лот</p><p>3. Перейти на страницу лотов&nbsp;<a href="http://bazar.jettycloud.com/lots" style="font-family: Roboto; font-weight: 400; text-decoration: none;"><span style="font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com/lots</span></a></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>На приватной странице лотов найти созданный непроданный лот&nbsp;&nbsp;</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Созданный лот отображается с указанными при создании ценой, названием. Также отображается логин пользователя, который его создал. Цвет элементов проданного лота должен быть менее ярким по отношению к непроданным лотам&nbsp;<br>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="3483" name="Отображение непроданного лота в приватном списке bazar.jettycloud.com">
+    <external_id>QBC-2549</external_id>
+    <summary>
+      <![CDATA[<p>Проверка отображения лота в личном списке пользователя</p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь</p><p>2. Созданный этим пользователем лот</p><p>3. Перейти на страницу лотов&nbsp;<a href="http://bazar.jettycloud.com/lots" style="font-family: Roboto; font-weight: 400; text-decoration: none;"><span style="font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com/lots</span></a></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>На приватной странице лотов найти созданный непроданный лот&nbsp;&nbsp;<br></p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[Созданный лот отображается с указанными при создании ценой, названием. Также отображается логин пользователя, который его создал]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+  <test_case internal_id="3486" name="Переход на страницу собственного непроданного лота из общего списка bazar.jettycloud.com">
+    <external_id>QBC-2552</external_id>
+    <summary>
+      <![CDATA[<p>Проверка перехода на страницу непроданного лота</p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь</p><p>2. Созданный этим пользователем непроданный лот</p><p>3. Перейти на страницу лотов&nbsp;<a href="http://bazar.jettycloud.com/lots" style="font-family: Roboto; font-weight: 400; text-decoration: none;"><span style="font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com/lots</span></a></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>На общей странице лотов при навести на созданный непроданный лот курсор</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[При наведении на созданный непроданный лот форма курсора принимает форму ладони с выведенным указательным пальцем]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Нажать на непроданный лот&nbsp;</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>При нажатии на элемент лота в списке происходит переход на страницу этого лота<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Убедиться, что на странице отображается функционал в соответствии с принадлежностью лота пользователю&nbsp;</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>На странице лота отображается список заявок на покупку</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="3487" name="Переход на страницу несобственного непроданного лота из общего списка bazar.jettycloud.com">
+    <external_id>QBC-2553</external_id>
+    <summary>
+      <![CDATA[<p>Проверка перехода на страницу непроданного лота</p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь</p><p>2. Созданный этим пользователем непроданный лот</p><p>3. Перейти на страницу лотов&nbsp;<a href="http://bazar.jettycloud.com/lots" style="font-family: Roboto; font-weight: 400; text-decoration: none;"><span style="font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com/lots</span></a></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>На общей странице лотов при навести на созданный непроданный лот курсор</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[При наведении на созданный непроданный лот форма курсора принимает форму ладони с выведенным указательным пальцем]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>2</order>
+        <name>
+          <![CDATA[<p>Нажать на непроданный лот&nbsp;</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>При нажатии на элемент лота в списке происходит переход на страницу этого лота<br></p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+      <step>
+        <order>3</order>
+        <name>
+          <![CDATA[<p>Убедиться, что на странице отображается функционал в соответствии с принадлежностью лота пользователю&nbsp;</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[<p>На странице лота отображается кнопка оформления заявки на покупку</p>]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>0</priority>
+  </test_case>
+  <test_case internal_id="3484" name="Отображение проданного лота в общем списке bazar.jettycloud.com">
+    <external_id>QBC-2550</external_id>
+    <summary>
+      <![CDATA[<p>Проверка отсутствия проданного лота в общем списке</p>]]>
+    </summary>
+    <preconditions>
+      <![CDATA[<p>1. Зарегистрированный пользователь</p><p>2. Созданный этим пользователем выкупленный лот</p><p>3. Перейти на страницу лотов&nbsp;<a href="http://bazar.jettycloud.com/lots" style="font-family: Roboto; font-weight: 400; text-decoration: none;"><span style="font-size: 11pt; font-family: Arial; color: rgb(17, 85, 204); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; text-decoration-line: underline; text-decoration-skip-ink: none; vertical-align: baseline; white-space: pre-wrap;">http://bazar.jettycloud.com/lots</span></a></p>]]>
+    </preconditions>
+    <steps>
+      <step>
+        <order>1</order>
+        <name>
+          <![CDATA[<p>На общей странице лотов найти созданный проданный лот&nbsp;&nbsp;</p>]]>
+        </name>
+        <expected_result>
+          <![CDATA[На общей странице лотов данный лот не отображается]]>
+        </expected_result>
+        <execution_type_id>0</execution_type_id>
+      </step>
+    </steps>
+    <custom_fields/>
+    <behaviour_groups/>
+    <execution_type>0</execution_type>
+    <priority>2</priority>
+  </test_case>
+</test_cases>
